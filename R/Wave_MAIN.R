@@ -27,7 +27,7 @@
 	source('Chisquare_inv.R')
 	source('Chisquare_solve.R')
 
-	#Move one directory up
+	# Move one directory up
 	setwd('..')
 
 data<-read.table(paste(getwd(),'/Data/sst_nino3.dat',sep=''),header=FALSE)		# input SST time series
@@ -100,7 +100,7 @@ tiff(paste(getwd(),'/Output/sst_nino3_',mother,'.tiff',sep=''),width=350,height=
 suppressWarnings(par(fig=c(0.02,0.75,0.6,1),new=TRUE))
 plot(time,sst,type='l',xlab=NA,ylab=NA,xaxs='i',yaxs='r',ylim=c(-4,4),las=1)
 title('a) NINO3 Sea Surface Temperature (seasonal)',line=1,cex.main=0.9)
-title(ylab='NINO3 SST (°C)',cex.lab=0.9)
+title(ylab='NINO3 SST (Â°C)',cex.lab=0.9)
 
 
 #--- Contour plot wavelet power spectrum
