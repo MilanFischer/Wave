@@ -28,7 +28,7 @@
 	source('Chisquare_solve.R')
 
 
-data<-read.table('sst_nino3.dat',header=FALSE)		# input SST time series
+data<-read.table(paste(getwd(),'/Data/sst_nino3.dat',sep=''),header=FALSE)		# input SST time series
 sst=data$V1
 
 #------------------------------------------------------ Computation
