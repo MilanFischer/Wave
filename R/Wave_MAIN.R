@@ -81,7 +81,7 @@ avg=which((scale>=2)&(scale<8))
 Cdelta=0.776								# this is for the MORLET wavelet
 scale_avg=matrix(scale,length(scale),n)					# expand scale --> (J+1)x(N) array
 scale_avg=power/scale_avg						# [Eqn(24)]
-scale_avg=variance*dj*dt/Cdelta*sum(scale_avg[avg,])			#[Eqn(24)]
+scale_avg=variance*dj*dt/Cdelta*sum(scale_avg[avg,])			# [Eqn(24)]
 scaleavg_signif=wave_signif(variance,dt=dt,scale=scale,sigtest=2,lag1=lag1,siglvl=0.95,dof=c(2,7.9),mother=mother,param=-1)$signif
 
 
