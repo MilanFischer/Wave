@@ -27,6 +27,8 @@
 	source('Chisquare_inv.R')
 	source('Chisquare_solve.R')
 
+	#Move one directory up
+	setwd('..')
 
 data<-read.table(paste(getwd(),'/Data/sst_nino3.dat',sep=''),header=FALSE)		# input SST time series
 sst=data$V1
@@ -89,7 +91,7 @@ ls()
 
 #------------------------------------------------------ Plotting
 
-tiff(paste('sst_nino3_',mother,'.tiff'),width=350,height=220,units='mm',res=400,type='cairo')
+tiff(paste(getwd(),'/Output/sst_nino3_',mother,'.tiff',sep=''),width=350,height=220,units='mm',res=400,type='cairo')
 
 # or
 # dev.new()
