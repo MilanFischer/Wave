@@ -20,7 +20,7 @@
 	library(signal)
 	library(graphics)
 
-	#Functions to be used
+	# Functions to be used
 	source('Wave_bases.R')
 	source('Wavelet.R')
 	source('Wave_signif.R')
