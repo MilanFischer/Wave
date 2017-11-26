@@ -91,7 +91,7 @@ ls()
 
 #------------------------------------------------------ Plotting
 
-tiff(paste(getwd(),'/Output/sst_nino3_',mother,'.tiff',sep=''),width=350,height=220,units='mm',res=400,type='cairo')
+tiff(paste(getwd(),'/Output/sst_nino3_',mother,'.tiff',sep=''),width=350,height=220,units='mm',res=200,type='cairo')
 
 # or
 # dev.new()
